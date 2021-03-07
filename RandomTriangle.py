@@ -20,6 +20,13 @@ def PickNewPoint(i=int):
     l = r.randint(1,4)
     if l == 1:
         X[0] = (X[0]+V1[0]) / 2
-        X[1] = (X[1]+V1[0]) / 2
+        X[1] = (X[1]+V1[1]) / 2
     elif l == 2:
-    
+        X[0] = (X[0]+V2[0]) / 2
+        X[1] = (X[1]+V2[1]) / 2
+    elif l == 3:
+        X[0] = (X[0]+V3[0]) / 2
+        X[1] = (X[0]+V3[1]) / 2
+    else:
+        print('error')
+        
