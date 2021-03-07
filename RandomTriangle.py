@@ -12,7 +12,7 @@ X2 = r.randint(0,11)
 X = [X1, X2]
 
 fig = plt.figure()
-plt.plot(V1[0], V1[1], V2[0], V2[1], V3[0], V3[1])
+plt.plot(V1[0], V1[1],'o', V2[0], V2[1], 'o',  V3[0], V3[1], 'o')
 plt.savefig('testPlot.png')
 
 #def PickNewPoint(i=int):
