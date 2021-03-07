@@ -13,8 +13,13 @@ X = [X1, X2]
 
 fig = plt.figure()
 plt.plot(V1[0], V1[1],'o', V2[0], V2[1], 'o',  V3[0], V3[1], 'o')
-plt.savefig('testPlot.png')
-
-#def PickNewPoint(i=int):
-#    r.randint(1,4)
+#plt.savefig('testPlot.png')
+plt.holdall
+plt.plot(X[0], X[1])
+def PickNewPoint(i=int):
+    l = r.randint(1,4)
+    if l == 1:
+        X[0] = (X[0]+V1[0]) / 2
+        X[1] = (X[1]+V1[0]) / 2
+    elif l == 2:
     
