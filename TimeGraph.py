@@ -20,9 +20,6 @@ df1 = df1.drop(['Province/State', 'Country/Region', 'Lat', 'Long'])
 df1 = df1.loc[(df1 != 0).any(1)]
 df1.index = pd.to_datetime(df1.index)
 
-import numpy as np
-import matplotlib.pyplot as plt
-
 color = ['red', 'green', 'blue', 'orange']
 fig = plt.figure()
 plt.xticks(rotation=45, ha="right", rotation_mode="anchor") #rotate the x-axis values
