@@ -30,3 +30,5 @@ def PickNewPoint(i=int):
     else:
         print('error')
         
+animator = ani.FuncAnimation(fig, PickNewPoint, interval = 100)
+animator.save('test.gif')
